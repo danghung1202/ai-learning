@@ -1,8 +1,10 @@
 import os
 import dotenv
 
+import langchain
+langchain.debug = False
+
 dotenv.load_dotenv()
-print(f"{os.getenv('OPENAI_API_KEY')}")
 
 class AppConfig:
     @staticmethod
